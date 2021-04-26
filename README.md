@@ -30,3 +30,52 @@ implementation("io.opengood.extensions:kotest-extensions:VERSION")
 ```
 
 **Note:** See *Release* version badge above for latest version.
+
+## Features
+
+### Matchers
+
+#### Map
+
+* Assert list of maps are equal ignoring specific keys:
+
+    Example:
+
+    ```kotlin
+    import io.opengood.extensions.kotest.matcher
+    
+    val expected = listOf(
+        mapOf("foo" to "bar"),
+        mapOf("foo" to "baz")
+    )
+
+    val items = listOf(
+        mapOf(
+            "none" to "none",
+            "foo" to "bar"
+        ),
+        mapOf(
+            "none" to "none",
+            "foo" to "baz"
+        )
+    )
+
+    items.shouldBeEqualIgnoringKeys(expected, "none")
+    ```
+
+* Assert map entries are equal:
+
+    Example:
+
+    ```kotlin
+    import io.opengood.extensions.kotest.matcher
+    
+    fun makeEntry(key: String, value: String) = object : Map.Entry<String, String> {
+        override val key: String = key
+        override val value: String = value
+    }
+
+    val expected = makeEntry("foo", "bar")
+
+    makeEntry("foo", "bar") shouldBeMapEntry expected
+    ```
