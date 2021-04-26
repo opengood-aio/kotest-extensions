@@ -1,10 +1,11 @@
+import io.opengood.gradle.constant.Dependencies
 import io.opengood.gradle.enumeration.ProjectType
 
 plugins {
-    id("io.opengood.gradle.config") version "1.18.0"
+    id("io.opengood.gradle.config") version "1.20.0"
 }
 
-group = "io.opengood.commons"
+group = "io.opengood.extensions"
 
 opengood {
     main {
@@ -14,6 +15,11 @@ opengood {
         spring = false
     }
     artifact {
-        description = "Commons library containing reusable functions, extensions, and objects for Kotlin"
+        description = "Library containing reusable extensions and functions for Kotest"
     }
+}
+
+dependencies {
+    implementation(Dependencies.KOTEST)
+    implementation(Dependencies.KOTEST_EXTENSIONS)
 }

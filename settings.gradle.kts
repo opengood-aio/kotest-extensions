@@ -1,1 +1,1 @@
-rootProject.name = "kotlin-commons"
+rootProject.name = "kotest-extensions"
