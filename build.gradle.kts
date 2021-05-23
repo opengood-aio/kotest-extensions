@@ -2,7 +2,7 @@ import io.opengood.gradle.constant.Dependencies
 import io.opengood.gradle.enumeration.ProjectType
 
 plugins {
-    id("io.opengood.gradle.config") version "1.20.0"
+    id("io.opengood.gradle.config") version "1.22.0"
 }
 
 group = "io.opengood.extensions"
