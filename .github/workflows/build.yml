@@ -44,6 +44,6 @@ jobs:
           verbose: true
 
       - name: FOSSA
-          uses: fossas/fossa-action@v1
-          with:
-            api-key: ${{ secrets.FOSSA_API_KEY }}
+        uses: fossas/fossa-action@v1
+        with:
+          api-key: ${{ secrets.FOSSA_API_KEY }}
