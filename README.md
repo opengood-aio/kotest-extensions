@@ -4,6 +4,7 @@
 [![Release](https://github.com/opengoodio/kotest-extensions/workflows/release/badge.svg)](https://github.com/opengoodio/kotest-extensions/actions?query=workflow%3Arelease)
 [![Codecov](https://codecov.io/gh/opengoodio/kotest-extensions/branch/main/graph/badge.svg?token=AEEYTGK87F)](https://codecov.io/gh/opengoodio/kotest-extensions)
 [![Release Version](https://img.shields.io/github/release/opengoodio/kotest-extensions.svg)](https://github.com/opengoodio/kotest-extensions/releases/latest)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.opengood.extensions/kotest-extensions/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.opengood.extensions/kotest-extensions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/opengoodio/kotest-extensions/master/LICENSE)
 [![FOSSA](https://app.fossa.com/api/projects/custom%2B22161%2Fgithub.com%2Fopengoodio%2Fkotest-extensions.svg?type=small)](https://app.fossa.com/projects/custom%2B22161%2Fgithub.com%2Fopengoodio%2Fkotest-extensions?ref=badge_small)
 
