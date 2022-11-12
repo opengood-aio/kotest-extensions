@@ -14,8 +14,9 @@ fun <K : Any, V : Any> List<Map<K, V>>.shouldBeEqualIgnoringKeys(
     expected.forEachIndexed { i, expectedMap ->
         val actualMap = this[i]
         expectedMap.forEach { (key, value) ->
-            if (!keys.contains(key))
+            if (!keys.contains(key)) {
                 actualMap.shouldContain(key, value)
+            }
         }
     }
 }
