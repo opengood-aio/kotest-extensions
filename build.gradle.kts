@@ -1,6 +1,3 @@
-import io.opengood.gradle.constant.Dependencies
-import io.opengood.gradle.enumeration.ProjectType
-
 plugins {
     id("io.opengood.gradle.config")
 }
@@ -8,9 +5,6 @@ plugins {
 group = "io.opengood.extensions"
 
 opengood {
-    main {
-        projectType = ProjectType.LIB
-    }
     features {
         spring = false
     }
@@ -20,6 +14,6 @@ opengood {
 }
 
 dependencies {
-    implementation(Dependencies.KOTEST)
-    implementation(Dependencies.KOTEST_EXTENSIONS)
+    implementation("io.kotest:kotest-extensions-junit5:_")
+    implementation("io.kotest:kotest-runner-junit5:_")
 }

@@ -6,7 +6,7 @@ import io.kotest.matchers.shouldBe
 
 fun <K : Any, V : Any> List<Map<K, V>>.shouldBeEqualIgnoringKeys(
     expected: List<Map<K, V>>,
-    vararg keys: K
+    vararg keys: K,
 ) {
     shouldNotBeEmpty()
     size shouldBe expected.size
@@ -22,7 +22,7 @@ fun <K : Any, V : Any> List<Map<K, V>>.shouldBeEqualIgnoringKeys(
 }
 
 infix fun <K : Any, V : Any> Map.Entry<K, V>.shouldBeMapEntry(
-    expected: Map.Entry<K, V>
+    expected: Map.Entry<K, V>,
 ) {
     key shouldBe expected.key
     value shouldBe expected.value

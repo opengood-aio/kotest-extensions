@@ -7,22 +7,22 @@ class MapTest : FunSpec({
     test("list of map of generic types shouldBeEqualIgnoringKeys extension method asserts maps are equal with ignored keys") {
         val expected = listOf(
             mapOf(
-                "foo" to "bar"
+                "foo" to "bar",
             ),
             mapOf(
-                "foo" to "baz"
-            )
+                "foo" to "baz",
+            ),
         )
 
         val items = listOf(
             mapOf(
                 "none" to "none",
-                "foo" to "bar"
+                "foo" to "bar",
             ),
             mapOf(
                 "none" to "none",
-                "foo" to "baz"
-            )
+                "foo" to "baz",
+            ),
         )
 
         items.shouldBeEqualIgnoringKeys(expected, "none")
