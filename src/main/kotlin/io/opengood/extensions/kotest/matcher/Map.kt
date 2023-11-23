@@ -21,9 +21,7 @@ fun <K : Any, V : Any> List<Map<K, V>>.shouldBeEqualIgnoringKeys(
     }
 }
 
-infix fun <K : Any, V : Any> Map.Entry<K, V>.shouldBeMapEntry(
-    expected: Map.Entry<K, V>,
-) {
+infix fun <K : Any, V : Any> Map.Entry<K, V>.shouldBeMapEntry(expected: Map.Entry<K, V>) {
     key shouldBe expected.key
     value shouldBe expected.value
 }
