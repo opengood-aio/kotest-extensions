@@ -2,6 +2,7 @@
 
 [![Build](https://github.com/opengoodio/kotest-extensions/workflows/build/badge.svg)](https://github.com/opengoodio/kotest-extensions/actions?query=workflow%3Abuild)
 [![Release](https://github.com/opengoodio/kotest-extensions/workflows/release/badge.svg)](https://github.com/opengoodio/kotest-extensions/actions?query=workflow%3Arelease)
+[![CodeQL](https://github.com/opengoodio/kotest-extensions/actions/workflows/codeql.yml/badge.svg)](https://github.com/opengoodio/kotest-extensions/actions/workflows/codeql.yml)
 [![Codecov](https://codecov.io/gh/opengoodio/kotest-extensions/branch/main/graph/badge.svg?token=AEEYTGK87F)](https://codecov.io/gh/opengoodio/kotest-extensions)
 [![Release Version](https://img.shields.io/github/release/opengoodio/kotest-extensions.svg)](https://github.com/opengoodio/kotest-extensions/releases/latest)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.opengood.extensions/kotest-extensions/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.opengood.extensions/kotest-extensions)
