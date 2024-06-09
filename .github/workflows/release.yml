@@ -1,13 +1,22 @@
 name: release
 
 on:
-  push:
+  pull_request:
+    types:
+      - closed
+      - labeled
     branches:
       - main
+    paths-ignore:
+      - .github/workflows/*
+      - .gitignore
+      - gradle.properties
+      - LICENSE
+      - README.md
 
 jobs:
   release:
-    uses: opengoodio/central-workflows/.github/workflows/gradle-oss-release.yml@main
+    uses: opengood-aio/central-workflows/.github/workflows/gradle-oss-release.yml@main
     with:
       git-email: ${{ vars.GIT_EMAIL }}
       git-user: ${{ vars.GIT_USER }}
@@ -17,3 +26,4 @@ jobs:
       gpg-signing-private-key: ${{ secrets.GPG_SIGNING_PRIVATE_KEY }}
       oss-repo-username: ${{ secrets.OSS_REPO_USERNAME }}
       oss-repo-password: ${{ secrets.OSS_REPO_PASSWORD }}
+      workflow-token: ${{ secrets.WORKFLOW_TOKEN }}
