@@ -13,7 +13,7 @@ Library containing reusable extensions and functions for Kotest
 
 ## Compatibility
 
-* Java 17
+* Java 21
 * Spring Boot 3
 
 ## Setup
