@@ -7,7 +7,6 @@
 [![Release Version](https://img.shields.io/github/release/opengood-aio/kotest-extensions.svg)](https://github.com/opengood-aio/kotest-extensions/releases/latest)
 [![Maven Central](https://img.shields.io/maven-central/v/io.opengood.extensions/kotest-extensions.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.opengood.extensions%22%20AND%20a:%22kotest-extensions%22)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/opengood-aio/kotest-extensions/master/LICENSE)
-[![FOSSA](https://app.fossa.com/api/projects/custom%2B22161%2Fgithub.com%2Fopengood-aio%2Fkotest-extensions.svg?type=small)](https://app.fossa.com/projects/custom%2B22161%2Fgithub.com%2Fopengood-aio%2Fkotest-extensions?ref=badge_small)
 
 Library containing reusable extensions and functions for Kotest
 
